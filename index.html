@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <title>
-    </title>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Cooking App</title>
   </head>
   <body>
-
+    <div class="container">
+      <h1>Survey</h1>
+      <form id="survey">
+        <div class="form-group">
+          <select class="form-control" id="course">
+            <option>Java/Javascript</option>
+            <option>Ruby/Rails</option>
+            <option>CSS/Design</option>
+            <option>C#/.NET</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <div class="radio">
+            <label>
+              <input type="radio" name="feeling" value="Not satisfied" checked>
+              Not satisfied
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="feeling" value="No comment">
+              No comment
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="feeling" value="Satisfied">
+              Satisfied
+            </label>
+          </div>
+        </div>
+        <div class="form-group" id="commentBox">
+          <label for="comments">Additional Comments?</label>
+          <input id="comments" class="form-control" type="text">
+        </div>
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div class="panel">
+        <div id="output1">
+        </div>
+      </div>
+    </div>
   </body>
 </html>
